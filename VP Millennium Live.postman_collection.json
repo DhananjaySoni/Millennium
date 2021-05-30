@@ -1,0 +1,94 @@
+{
+	"info": {
+		"_postman_id": "43882222-f840-4668-a2e3-64a37a6655c5",
+		"name": "VP Millennium Live",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "post_mac_id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mac_id\": \"de-de-de\",\r\n    \"mobile_number\": \"+919408391318\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://www.deedsdrafting.com/millennium/post_mac_id/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"deedsdrafting",
+						"com"
+					],
+					"path": [
+						"millennium",
+						"post_mac_id",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "verify_token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "Authorization",
+							"value": "Token c2e5edb9644a43eee7df512043def4ffccfa270c",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://www.deedsdrafting.com/millennium/verify_token/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"deedsdrafting",
+						"com"
+					],
+					"path": [
+						"millennium",
+						"verify_token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "folders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://www.deedsdrafting.com/millennium/folders/",
+					"protocol": "https",
+					"host": [
+						"www",
+						"deedsdrafting",
+						"com"
+					],
+					"path": [
+						"millennium",
+						"folders",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
